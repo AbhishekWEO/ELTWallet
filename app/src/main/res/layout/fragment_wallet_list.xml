@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id = "@+id/swipeRefresh"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below="@+id/heading_section">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:name="com.crypto.eltwallet.WalletFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".fragments_dashborad.WalletFragment"
+            tools:listitem="@layout/layout_wallet" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/viewgrp_import_create"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:translationY="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/viewaddwallet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="@color/skyblue"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/view_or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/circular_solid_blue"
+                        android:gravity="center"
+                        android:text="@string/or"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/create_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/view_or">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/rounded_solid_corners_white_min_radius"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/create_wallet"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/import_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/view_or">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/rounded_solid_corners_white_min_radius"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/import_wallet"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/heading_section"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroundColor">
+
+        <TextView
+            android:id="@+id/heading"
+            style="@style/fragment_headings"
+            android:text="@string/wallets" />
+
+        <ImageView
+            android:id="@+id/add_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_add"/>
+
+        <ImageView
+            android:id="@+id/arrowup"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/arrowup"
+            android:tint="@color/skyblue"
+            android:translationY="25dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_wallets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/no_wallets"
+        android:visibility="gone"/>
+
+</RelativeLayout>

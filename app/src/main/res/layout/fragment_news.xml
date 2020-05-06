@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main"
+    android:background="@color/backgroundColor"
+    tools:context=".fragments_dashborad.NewsFragment">
+
+    <TextView
+        style="@style/tv_uploadKycDocs"
+        android:padding="10dp"
+        android:text="@string/crypto_news"
+        android:id="@+id/tv_title"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_title"
+        android:id="@+id/rv_newsList"/>
+
+    <TextView
+        style="@style/tv_idVerifyTitle"
+        android:text="@string/no_news_found"
+        android:id="@+id/tv_noNewsFound"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

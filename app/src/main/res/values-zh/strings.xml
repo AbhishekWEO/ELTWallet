@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ELT钱包</string>
+
+    <!--    Auth Screen -->
+    <string name="login">登录</string>
+    <string name="signup">注册</string>
+    <string name="one">一</string>
+    <string name="two">二</string>
+
+
+    <!--    LoginModel-->
+    <string name="please_signinto_accessyour_account">请登录您的帐户</string>
+    <string name="emailorname">电子邮箱/手机号</string>
+    <string name="remember_me">记住密码</string>
+    <string name="forgetpassword">忘记密码？</string>
+
+
+    <!--    Forgot password-->
+    <string name="wewill_sendyou_linkto_logininstantly">我们会立即发给您一个登录链接。</string>
+
+
+    <!--    SignUp-->
+    <string name="add_new_account">添加新账户</string>
+    <string name="name">姓名</string>
+    <string name="email">电子邮箱</string>
+    <string name="mobile">手机号</string>
+    <string name="password">请输入密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="alpha_numeric_eight_character">输入至少8个字符，包括字母数字，特殊字符和大写字母</string>
+
+
+    <!--    OTP-->
+    <string name="verify_your_no">验证您的手机号</string>
+    <string name="otpstatement">一次性密码已发送到您的手机，请在此处输入相同的值进行登录</string>
+    <string name="phoneno">手机号</string>
+    <string name="resend">重发</string>
+
+
+    <!--    Validations-->
+    <string name="enter_your_username">请输入用户名</string>
+    <string name="enter_your_email">请输入您的电子邮箱</string>
+    <string name="enter_your_correct_email">您输入的电子邮箱不正确</string>
+    <string name="enter_your_mobileno">请输入您的手机号码</string>
+    <string name="enter_atleast_your_mobileno">請輸入至少九位數的手機號碼</string>
+    <string name="enter_your_password">输入您的密码</string>
+    <string name="atleast_eight">需要提供8个字符</string>
+    <string name="enter_well_pattern">输入8个字符，至少包含一个数字，一个字符和一个特殊字符</string>
+    <string name="make_sure_you_enter_same_password">请确保您输入了相同的密码</string>
+
+    <string name="enter_wallet_address">请输入您的钱包地址</string>
+    <string name="enter_wallet_Private_key">請輸入私鑰</string>
+    <string name="enter_new_wallet_name">請輸入新的錢包名稱</string>
+
+    <string name="enter_from_address">從地址輸入</string>
+    <string name="enter_to_address">輸入地址</string>
+    <string name="enter_elt_amount">輸入ELT金額</string>
+
+
+    <!--    OTP-->
+    <string name="send_again">您可以再次发送OTP！</string>
+    <string name="expire">OTP将在以下时间到期：</string>
+
+
+    <!--    Bottom Navigation-->
+    <string name="home">家</string>
+    <string name="wallets">钱包</string>
+    <string name="news">新聞</string>
+    <string name="notifications">通知事項</string>
+    <string name="settings">設定值</string>
+
+
+    <!--    Dashboard-->
+    <string name="daily_limit">您的每日發送限制</string>
+    <string name="weekly_limit">您的每週發送限制</string>
+    <string name="monthly_limit">您的每月發送限制</string>
+    <string name="elt">ELT</string>
+    <string name="elt_performance">ELT表現</string>
+    <string name="one_month">1個月</string>
+    <string name="three_months">3個月</string>
+    <string name="six_months">6個月</string>
+    <string name="noChartDataString">图表加载 :)</string>
+
+
+    <!--    Wallet-->
+    <string name="create_wallet">创建钱包</string>
+    <string name="import_wallet">导入钱包</string>
+    <string name="name_new_wallet">為您的新錢包命名</string>
+    <string name="enter_wallet_name">輸入錢包名稱</string>
+    <string name="create">創建</string>
+    <string name="successful">成功的</string>
+    <string name="new_wallet">您的新錢包已創建！</string>
+    <string name="wallet_address">钱包地址</string>
+    <string name="private_key">私钥</string>
+    <string name="backed_up">確定要備份私鑰嗎？</string>
+    <string name="not_yet">還沒</string>
+    <string name="yes_sure">是，我確定</string>
+    <string name="no_wallets">沒有錢包。按“ +”創建一個錢包。</string>
+
+
+    <!--    Import Wallet-->
+    <string name="with_private_key">帶私鑰</string>
+    <string name="from_phone">通過電話</string>
+    <string name="new_wallet_name">新錢包名稱</string>
+    <string name="paste_wallet_address">在此處粘貼您的電子錢包地址</string>
+    <string name="paste_private_key">在此處粘貼您的電子錢包私鑰</string>
+    <string name="paste_new_wallet_name">粘貼新的導入錢包</string>
+    <string name="import_">进口</string>
+
+
+    <!--    Wallet Details-->
+    <string name="daily_limits">每日限額： </string>
+    <string name="weekly_limits">每週限額： </string>
+    <string name="monthly_limits">每月限額： </string>
+    <string name="rename_wallet">重命名钱包</string>
+    <string name="delete_wallet">删除电子钱包</string>
+    <string name="delete_wallet_warning">您確定要刪除錢包嗎？</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="receive">接收</string>
+    <string name="send">发送</string>
+    <string name="save">救</string>
+    <string name="name_wallet">為您的錢包命名</string>
+    <string name="rename_successfully">電子錢包名稱更改成功</string>
+    <string name="wallet_transactions">錢包交易</string>
+    <string name="all">所有</string>
+    <string name="sent">已发送</string>
+    <string name="received">已收到</string>
+    <string name="no_transactions">沒有交易</string>
+    <string name="there_is_no_elt">這個錢包裡沒有ELT，請把一些Elt轉移進去</string>
+
+
+    <!--    Receive-->
+    <string name="only_send_elt">僅將ELT發送到此地址！</string>
+    <string name="sending_any_other">發送ELT以外的任何其他數字資產將導致永久損失。</string>
+    <string name="copy_address">複製地址</string>
+    <string name="close">關</string>
+
+
+    <!--    Send-->
+    <string name="from">從</string>
+    <string name="to">至</string>
+    <string name="paste_receiver">在此處粘貼接收者的錢包地址</string>
+    <string name="elt_amount">ELT金額</string>
+    <string name="usd_amount">美元金額</string>
+    <string name="eg_100">例如：100.00</string>
+    <string name="max"><u>最高</u></string>
+    <string name="gas_price">汽油價格</string>
+    <string name="i_acknowledge">我確認在轉帳過程中將收取0.000021 ELT的交易費。</string>
+    <string name="enter_otp">輸入一次性密碼</string>
+    <string name="please_accept">請接受條款 &amp; 條件</string>
+    <string name="clear">明确</string>
+    <string name="passcode_sent">密碼已發送到您的註冊電子郵件地址，請檢查您的電子郵件。</string>
+    <string name="successfully_sent">發送成功</string>
+
+
+    <!--    Transaction Details-->
+    <string name="transaction_details">交易明細</string>
+    <string name="tx_hash">Tx哈希</string>
+    <string name="tx_receipt_status">Txreceipt狀態</string>
+    <string name="block_height">塊高</string>
+    <string name="time_stamp">時標</string>
+    <string name="value">值</string>
+    <string name="gas_limit">氣體極限</string>
+    <string name="gas_used_by_ten">十人用氣</string>
+    <string name="nonce">隨機數</string>
+    <string name="input_data">輸入數據</string>
+
+
+    <!--    Notifications-->
+    <string name="no_notifications">沒有通知</string>
+    <string name="you_have_received">你收到了 </string>
+    <string name="you_have_sent">你已經發送 </string>
+    <string name="you_have_created">您已經創建了一個新錢包 </string>
+    <string name="your_transaction_of">您的交易 </string>
+    <string name="is_failed_to">未能</string>
+    <string name="delete">删除</string>
+    <string name="are_you_sure_clear_notification">您確定要清除此通知嗎？</string>
+    <string name="transaction_failed">交易失敗</string>
+
+
+    <!--    KYC Verification-->
+    <string name="start_verification">開始驗證</string>
+    <string name="government_regulations">政府法規要求我們更多地了解您。</string>
+    <string name="full_legal_name">法定全名</string>
+    <string name="proof_of_id">身份證明</string>
+    <string name="proof_of_residence">居住證明</string>
+    <string name="enter_your_full_legal">輸入您的合法全名，如ID所示。</string>
+    <string name="next">下一個</string>
+
+    <string name="select_type_of_document">選擇您要掃描的文檔類型。</string>
+    <string name="malaysia_has_been_selected"><b>Malaysia</b> 已被選擇為您文件的發行國家。 <u><b>改變國家。</b></u></string>
+    <string name="passport">護照</string>
+    <string name="driving_license">駕駛執照</string>
+    <string name="identity_card">身份證</string>
+
+
+    <string name="upoading_your_documents">上載文件</string>
+    <string name="this_should_only_take">這僅需要幾秒鐘，具體取決於您的網絡連接。</string>
+
+    <string name="documents_successfully">文件提交成功！</string>
+    <string name="thank_you_kyc">謝謝！驗證在2-3個工作日內完成後，我們會通知您。</string>
+    <string name="finished">已完成</string>
+
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="something_went_wrong">有些不对劲</string>
+    <string name="response_null">響應為空</string>
+    <string name="logout">退出</string>
+    <string name="or">要么</string>
+    <string name="important">重要：</string>
+    <string name="important_note">請備份並安全保存您的私鑰，如果丟失，將無法恢復。\ n請勿與他人共享，如果您向公眾公開您的資金，將會被盜。</string>
+
+
+    <string name="take_photo">拍照</string>
+    <string name="choose_fromlib">從圖書館選擇</string>
+    <string name="add_photo">添加照片！</string>
+    <string name="update">更新資料</string>
+    <string name="profile_updated_successfully">個人資料更新成功</string>
+
+
+    <string name="enter_oldPwd">輸入您的舊密碼</string>
+    <string name="enter_newPwd">輸入新密碼</string>
+    <string name="enter_cPwd">輸入您的確認密碼</string>
+    <string name="atleastEight">至少需要8個字符</string>
+    <string name="create_secure_pin">創建安全密碼</string>
+    <string name="change_secure_pin">更改安全密碼</string>
+    <string name="set_your_secure_pin">設置您的安全密碼</string>
+    <string name="secure_pin_length">安全密碼的長度應為4位數字</string>
+    <string name="enter_secure_pin">输入安全别针</string>
+    <string name="confirm_secure_pin">輸入確認安全密碼</string>
+    <string name="enter_current_secure_pin">輸入當前的安全密碼</string>
+    <string name="enter_new_secure_pin">輸入新的安全密碼</string>
+    <string name="confirm_new_secure_pin">輸入確認新安全密碼</string>
+    <string name="make_sure_you_enter_same_pin">請確保您輸入了相同的密碼</string>
+    <string name="secure_pin_msg">您之前已使用過此安全密碼，請嘗試其他密碼</string>
+    <string name="account_security">帳號安全</string>
+    <string name="login_with_secure_pin">使用安全密碼登錄</string>
+    <string name="login_with_face_id_touch_id">使用面部ID /觸摸ID登錄</string>
+    <string name="change_password">更改密碼</string>
+    <string name="no_internet_connection">沒有網絡連接</string>
+    <string name="personal_information">個人信息</string>
+    <string name="identity_verification">身份驗證</string>
+    <string name="push_notifications">推送通知</string>
+    <string name="language">語言</string>
+    <string name="currency">貨幣</string>
+    <string name="terms_of_use">使用條款</string>
+    <string name="privacy_policy">隱私政策</string>
+    <string name="verify_your_secure_pin">驗證您的安全密碼</string>
+    <string name="please_enter_correct_secure_pin">請輸入正確的安全密碼</string>
+    <string name="update_yourmobile">請更新您的手機以訪問指紋</string>
+    <string name="no_hardware">沒有指紋硬件</string>
+    <string name="please_enable_touchid">您似乎已從手機中禁用了Touch ID，請從“設置”中啟用</string>
+    <string name="cannot_recognise_yorfinger">無法識別您的指紋。請再試一遍。</string>
+    <string name="touch_id_as_authentication">我們使用Touch ID作為身份驗證來訪問。</string>
+
+
+    <!--dxdfdf-->
+    <string name="enter_first_name">輸入名字</string>
+    <string name="profile_picture">個人資料圖片</string>
+    <string name="first_name">名字</string>
+    <string name="last_name">姓</string>
+    <string name="enter_last_name">輸入姓氏</string>
+    <string name="full_name_as_per_national_id">根據國家身份證的全名</string>
+    <string name="address1">地址1</string>
+    <string name="enter_address">輸入地址</string>
+    <string name="address2">地址2</string>
+    <string name="gender">性別</string>
+    <string name="birthday">生日</string>
+    <string name="city">市</string>
+    <string name="enter_city">輸入城市</string>
+    <string name="state">州</string>
+    <string name="enter_state">輸入狀態</string>
+    <string name="country">國家</string>
+    <string name="postal_code">郵政編碼</string>
+    <string name="enter_post_code">輸入郵遞區號</string>
+    <string name="dob">出生日期</string>
+    <string name="full_name">全名</string>
+
+
+    <string name="verify_your_identity">驗證您的身份</string>
+    <string name="verify_your_details_to_increase_your_daily_send_limit">驗證您的詳細信息以增加每日發送限制。</string>
+    <string name="email_address">電子郵件地址</string>
+    <string name="verify">校驗</string>
+    <string name="verified">已驗證</string>
+    <string name="change">更改</string>
+    <string name="phone_number">電話號碼</string>
+    <string name="kyc_verification">KYC驗證</string>
+    <string name="update_your_email">更新您的電子郵件</string>
+    <string name="enter_your_new_email">輸入您的新電子郵件</string>
+    <string name="resend_email">重發電子郵件</string>
+    <string name="update_your_contact_number">更新您的聯繫電話</string>
+
+
+    <string name="please_enter_your_legal_name">請輸入您的法定姓名</string>
+    <string name="malaysia">Malaysia</string>
+    <string name="has_been_selected">已被選擇為您文件的發行國家。</string>
+    <string name="change_country"><u><b>改變國家。</b></u></string>
+
+    <string name="submit">提交</string>
+    <string name="upload_document">上傳文件</string>
+    <string name="please_upload_your_document">請上傳您的文件</string>
+    <string name="front_side">前面</string>
+    <string name="back_side">背面</string>
+    <string name="upload_your_file_front">上載您的文件</string>
+    <string name="upload_your_file_back">上傳回文件</string>
+    <string name="please_upload_front_side_of_document">請上傳文件正面</string>
+    <string name="uploading_your_documents">上載文件</string>
+    <string name="this_should_take">這僅需要幾秒鐘，具體取決於您的網絡連接。</string>
+    <string name="scan_document">上傳文件</string>
+    <string name="scan">上載</string>
+    <string name="front">面前</string>
+    <string name="back">背部</string>
+    <string name="check_readability">檢查可讀性</string>
+    <string name="retake">奪回</string>
+    <string name="readable">可讀的</string>
+    <string name="make_sure_that_all_data_on_your_document_is_fully_visible_readable_glare_free_and_not_blurred">確保文檔上的所有數據完全可見，可讀，無眩光且不模糊</string>
+    <string name="skip">跳躍</string>
+    <string name="camera">相機</string>
+    <string name="gallery">畫廊</string>
+    <string name="set">組</string>
+    <string name="of">的</string>
+    <string name="upload_back_side_document">上傳背面文件</string>
+    <string name="do_you_want_to_upload_back_side_of_document">您要上傳文檔的背面嗎？</string>
+    <string name="enter_old_password">輸入舊密碼</string>
+    <string name="enter_new_password">輸入新密碼</string>
+    <string name="re_enter_new_password">重新輸入新的密碼</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">你好空白片段</string>
+    <string name="crypto_news">加密新聞</string>
+    <string name="no_news_found">找不到新聞</string>
+    <string name="cryptonews">加密新聞</string>
+    <string name="your_email_updated_successfully">您的電子郵件已成功更新</string>
+    <string name="please_verify_your_phone_number_and_email_address">請驗證您的電話號碼和電子郵件地址</string>
+    <string name="kyc_document_already_uploaded_msg">您已經上傳了KYC文檔。驗證完成後，我們會通知您</string>
+    <string name="kyc_documents_accepted_msg">您上傳的KYC文件已被接受</string>
+    <string name="kyc_documents_rejected_msg">您上傳的KYC文檔已被拒絕，請重新上傳</string>
+    <string name="kyc_documents_verified_msg">您上傳的KYC文件已通過驗證</string>
+    <string name="select_picture">選擇圖片</string>
+    <string name="please_enter_first_name">請輸入名字</string>
+    <string name="password_changed_successfully">密碼修改成功</string>
+    <string name="change_pwd_desc">輸入新密碼，密碼長度至少為8個字符，並且至少包含一個數字和一個特殊字符，例如：！@＃$％^ *-</string>
+    <string name="app_version_2_8_1">App版本2.8.1</string>
+    <string name="enable_location">啟用位置</string>
+    <string name="location_setting_msg">您的位置信息設置已設置為“關閉”。\ n請啟用位置信息以使用此應用</string>
+    <string name="location_settings">位置設定</string>
+    <string name="remaining">剩餘的</string>
+    <string name="success">成功</string>
+    <string name="please_click_back_again_to_exit">請再次單擊“返回”退出。</string>
+    <string name="do_you_really_want_to_change_lang">您確定要切換語言嗎？</string>
+    <string name="choose_language">選擇語言</string>
+    <string name="english">英語</string>
+    <string name="chinese">中文</string>
+    <string name="transactions_title">交易次數</string>
+    <string name="wallet_copied">錢包已復制</string>
+    <string name="profile_update_successfully">個人資料圖片更新成功</string>
+    <string name="permission_necessary">需要許可</string>
+    <string name="do_you_want_tologout">确定退出？</string>
+    <string name="since_last_30_days">自最近30天以來</string>
+
+</resources>

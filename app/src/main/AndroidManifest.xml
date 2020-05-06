@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crypto.eltwallet">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.crypto.eltwallet.activities.NewsDetailActivity"></activity>
+        <activity
+            android:name="com.crypto.eltwallet.activities.CheckReadabilityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.ScanDocsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.KycVerification5UploadingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.UploadDocumentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.KycVerification6ThanksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.KycVerification3IdActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name="com.crypto.eltwallet.activities.KycVerification2NameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.KycVerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.SecurePinLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.crypto.eltwallet.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.crypto.eltwallet.activities.SecurePinActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.IDVerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.AccountSecurityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.ScannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.TransactionDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.SendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.WalletDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.ImportWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.CreateWalletSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.BaseDashboardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.ForgotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.OtpLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.crypto.eltwallet.test.TestJavaActivity" />
+        <activity android:name="com.crypto.eltwallet.test.TestKotlinActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.crypto.eltwallet.activities.OtpSignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.AuthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.crypto.eltwallet.activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.crypto.eltwallet.activities.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#192450</color>
+    <color name="colorPrimaryDark">#192450</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#BCC2CA</color>
+    <color name="darkGrey">#807E7E</color>
+    <color name="red">#F44336</color>
+    <color name="softRed">#D54F4F</color>
+    <color name="backgroundColor">#F7F7F7</color>
+    <color name="light_purple">#2d375f</color>
+    <color name="fade_purple">#626887</color>
+
+    <!--    Dashboard Tabs Grey -->
+    <color name="lightGrey">#E0E3E6</color>
+    <color name="darkblue">#192450</color>
+    <color name="skyblue">#39B5FF</color>
+    <color name="green">#67CC7F</color>
+    <color name="purple">#8C9DDD</color>
+    <color name="dark_purple">#465690</color>
+    <color name="light_grey_one">#E5EAF0</color>
+
+    <color name="whiteoff">#606060</color>
+    <color name="offGrey">#f5f2f2</color>
+
+    <color name="scan_docsBg">#F0F0F0</color>
+    <color name="scan_docs_darkGrey">#CCCCCC</color>
+
+
+</resources>

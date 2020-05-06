@@ -1,0 +1,107 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/rl_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/arrow_back" />
+
+        <TextView
+            style="@style/white_headings"
+            android:text="@string/identity_verification" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/government_regulations"
+            android:textSize="26sp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/ll_full_legal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_full_legal_name" />
+
+            <TextView
+                style="@style/text_view_kyc"
+                android:text="@string/full_legal_name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_proof_of_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_proof_of_id" />
+
+            <TextView
+                style="@style/text_view_kyc"
+                android:text="@string/proof_of_id" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_proof_of_residence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_proof_of_residence" />
+
+            <TextView
+                style="@style/text_view_kyc"
+                android:text="@string/proof_of_residence" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_start"
+        style="@style/SkyBlueButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/start_verification" />
+
+</RelativeLayout>

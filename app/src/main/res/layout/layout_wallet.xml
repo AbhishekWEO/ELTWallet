@@ -1,0 +1,69 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/current_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_solid_corners_blue_min_radius"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/walletName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/arrow"
+            android:text="Wallet 1 "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/walletAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/walletName"
+            android:text="0x09dd384bacbaf97fffa0c5de3f7ed6abdb5d5"
+            android:textSize="12sp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:rotation="180"
+            android:src="@drawable/arrow_white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/walletAddress">
+
+            <TextView
+                android:id="@+id/dollarPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="($359.25)"
+                android:layout_alignBottom="@+id/walletBal"
+                android:textColor="@color/purple"/>
+
+            <TextView
+                android:id="@+id/walletBal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="321.123456 ELT"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,390 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+
+    <!--    Auth Screen Styles-->
+    <style name="HorizontalLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/rounded_hollow_background_edittext_gery</item>
+    </style>
+
+
+    <!--    Buttons-->
+    <style name="SkyBlueButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/rounded_solid_corners_sky_blue</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <!--    Buttons-->
+    <style name="DarkPurpleButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/rounded_solid_corners_dark_purple</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <!--    Arrow Back-->
+    <style name="arrow_back">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:src">@drawable/arrow_white</item>
+    </style>
+
+
+    <!--    Dashboard Headings-->
+    <style name="home_headings">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--    Dashboard Numbers-->
+    <style name="home_headings_desc">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--    Dashboard Numbers-->
+    <style name="border">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+
+
+
+    <!--    Fragment headings-->
+    <style name="fragment_headings">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!--    white headings-->
+    <style name="white_headings">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+
+    <!--    create wallet linear layout-->
+    <style name="linear_layout_create_wallet">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/rounded_solid_corners_white</item>
+    </style>
+
+
+    <!--    sub headings-->
+    <style name="sub_headings">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!--    sub contents-->
+    <style name="sub_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!--    import wallet headings-->
+    <style name="import_wallet_headings">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!--    import wallet headings-->
+    <style name="import_wallet_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/rounded_solid_corners_grey_min_radius</item>
+    </style>
+
+
+    <!--    send elt headings-->
+    <style name="send_headings">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!--    send elt edttxt-->
+    <style name="send_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColorHint">@color/fade_purple</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/rounded_solid_corners_light_purple_min_radius</item>
+    </style>
+
+
+    <!--    Transaction Details-->
+    <style name="text_view_primary_transactions_deatils">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+    <!--    Transaction Details-->
+    <style name="text_view_grey_transactions_deatils">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+
+    <!--    Transaction Details-->
+    <style name="relative_layout_transactions_deatils">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+
+    <!--    Settings-->
+    <style name="text_view_primary_settings">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!--    Settings -->
+    <style name="relative_layout_settings">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <!--    Settings Arrow-->
+    <style name="settings_arrow">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:src">@drawable/arrow_grey</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+
+    <!--    EditText Profile-->
+    <style name="edittext_profile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:gravity">right</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <!--    KYC white headings-->
+    <style name="text_view_kyc">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+
+    <!--   07 04 2020-->
+    <style name="progress_bar">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="tv_verify">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">@color/skyblue</item>
+        <item name="android:background">@drawable/blue_rect</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="tv_idVerifyTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="tv_idVerifyContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="tv_change">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="img_check">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:src">@drawable/check</item>
+        <item name="android:tint">@color/skyblue</item>
+    </style>
+
+    <style name="tv_verified">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/skyblue</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!--   13 04 2020-->
+
+    <style name="tv_uploadKycDocs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="tv_uploadDocsSides">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="tv_uploadFilename">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="tv_newsDateTime">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">13sp</item>
+        <item name="singleLine">true</item>
+    </style>
+    <style name="tv_newsDesc">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+
+    <!--    Calendar-->
+    <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+
+    <color name="design_snackbar_background_color" tools:override="true">@color/colorPrimary</color>
+
+</resources>

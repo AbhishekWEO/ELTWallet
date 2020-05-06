@@ -1,0 +1,105 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header_section"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/back"
+                style="@style/arrow_back" />
+
+            <TextView
+                style="@style/white_headings"
+                android:text="@string/create_wallet" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/check" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/successful"
+            android:textColor="@color/green"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/new_wallet"
+            android:textColor="@color/colorPrimary" />
+
+        <LinearLayout style="@style/linear_layout_create_wallet">
+
+            <TextView
+                style="@style/sub_headings"
+                android:text="@string/wallet_address" />
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/sub_content"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear_layout_create_wallet">
+
+            <ImageView
+                android:id="@+id/qr_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                style="@style/sub_headings"
+                android:text="@string/private_key" />
+
+            <TextView
+                android:id="@+id/privateKey"
+                style="@style/sub_content"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linear_layout_create_wallet"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_solid_corners_soft_red">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/important" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/important_note" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main"
+    android:background="@color/backgroundColor"
+    tools:context=".activities.IDVerificationActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_back"
+            style="@style/arrow_back" />
+
+        <TextView
+            style="@style/white_headings"
+            android:text="@string/verify_your_identity" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_titleBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:textSize="14dp"
+                android:text="@string/verify_your_details_to_increase_your_daily_send_limit"
+                android:textColor="@color/grey"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/rl_emailVerify"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/tv_idVerifyTitle"
+                    android:text="@string/email_address"
+                    android:id="@+id/tv_emailTitle"/>
+
+                <TextView
+                    style="@style/tv_idVerifyContent"
+                    android:layout_below="@+id/tv_emailTitle"
+                    android:layout_toLeftOf="@+id/tv_very"
+                    android:id="@+id/tv_email"/>
+
+                <TextView
+                    style="@style/tv_verify"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/verify"
+                    android:id="@+id/tv_very"
+                    android:visibility="visible"
+                    android:layout_toLeftOf="@+id/tv_change_email"/>
+
+                <ProgressBar
+                    android:id="@+id/progressEmailVerify"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toLeftOf="@+id/tv_change_email"
+                    style="?android:attr/progressBarStyle"
+                    android:visibility="gone"
+                    android:indeterminateTint="@color/skyblue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ll_emailVerified"
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/tv_change_email"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/img_check"
+                        android:id="@+id/verified_image_email"/>
+
+                    <TextView
+                        style="@style/tv_verified"
+                        android:id="@+id/verified_message_email"
+                        android:layout_below="@+id/verified_image"
+                        android:text="@string/verified" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/tv_change"
+                    android:text="@string/change"
+                    android:id="@+id/tv_change_email" />
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/rl_phoneVerify"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/tv_idVerifyTitle"
+                    android:text="@string/phone_number"
+                    android:id="@+id/tv_phNumTitle"/>
+
+                <TextView
+                    style="@style/tv_idVerifyContent"
+                    android:layout_below="@+id/tv_phNumTitle"
+                    android:layout_toLeftOf="@+id/tv_phNumVery"
+                    android:id="@+id/tv_phNum"/>
+
+                <TextView
+                    style="@style/tv_verify"
+                    android:layout_toLeftOf="@+id/tv_change_phn"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/verify"
+                    android:id="@+id/tv_phNumVery"
+                    android:visibility="visible"/>
+
+                <ProgressBar
+                    android:id="@+id/progressPhnVerify"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toLeftOf="@+id/tv_change_phn"
+                    style="?android:attr/progressBarStyle"
+                    android:visibility="gone"
+                    android:indeterminateTint="@color/skyblue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ll_phnVerified"
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/tv_change_phn"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/img_check"
+                        android:id="@+id/verified_image_phn"/>
+
+                    <TextView
+                        style="@style/tv_verified"
+                        android:id="@+id/verified_message_phn"
+                        android:layout_below="@+id/verified_image"
+                        android:text="@string/verified" />
+
+                </LinearLayout>
+
+                <TextView
+
+                    style="@style/tv_change"
+                    android:text="@string/change"
+                    android:id="@+id/tv_change_phn" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_kycVerification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    style="@style/tv_idVerifyTitle"
+                    android:text="@string/kyc_verification"/>
+
+                <ImageView style="@style/settings_arrow" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

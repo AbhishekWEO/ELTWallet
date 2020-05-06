@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main"
+    android:background="@color/backgroundColor"
+    tools:context=".activities.UploadDocumentActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_back"
+            style="@style/arrow_back" />
+
+        <TextView
+            style="@style/white_headings"
+            android:text="@string/upload_document" />
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/tv_uploadKycDocs"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_marginTop="15dp"
+        android:text="@string/please_upload_your_document"
+        android:id="@+id/text_upload_document"
+        android:layout_marginLeft="25dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text_upload_document"
+        android:id="@+id/ll_upload"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="5">
+
+            <TextView
+                style="@style/tv_uploadDocsSides"
+                android:text="@string/front_side"
+                android:id="@+id/tv_frontside"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_frontimage"
+                android:background="@drawable/rounded_solid_dotted_boundary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_frontside">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView android:id="@+id/img_upload1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_uploading"
+                        android:tint="@color/skyblue"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        style="@style/tv_uploadFilename"
+                        android:layout_below="@+id/img_upload1"
+                        android:text="@string/upload_your_file_front"
+                        android:id="@+id/tv_frontText"
+                        android:gravity="center"/>
+                </RelativeLayout>
+                <ImageView android:id="@+id/isuploadedfront"
+                    android:visibility="gone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/check"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="5">
+
+            <TextView
+                style="@style/tv_uploadDocsSides"
+                android:text="Back side"
+                android:id="@+id/backside"/>
+
+            <RelativeLayout
+                android:id="@+id/backimage"
+                android:background="@drawable/rounded_solid_dotted_boundary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/backside">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/img_upload2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_uploading"
+                        android:tint="@color/skyblue"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        style="@style/tv_uploadFilename"
+                        android:layout_below="@+id/img_upload2"
+                        android:text="@string/upload_your_file_back"
+                        android:id="@+id/tv_backText"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+                <ImageView android:id="@+id/isuploadedback"
+                    android:visibility="gone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/check"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        style="@style/SkyBlueButton"
+        android:layout_below="@+id/ll_upload"
+        android:id="@+id/tv_submit"
+        android:text="@string/submit"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+</RelativeLayout>

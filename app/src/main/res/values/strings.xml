@@ -1,0 +1,363 @@
+<resources>
+    <string name="app_name">ELT Wallet</string>
+
+    <!--    Auth Screen -->
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="one">one</string>
+    <string name="two">two</string>
+
+
+    <!--    LoginModel-->
+    <string name="please_signinto_accessyour_account">Please sign in to access your account</string>
+    <string name="emailorname">Email/Mobile</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgetpassword">Forgot Password?</string>
+
+
+    <!--    Forgot password-->
+    <string name="wewill_sendyou_linkto_logininstantly">We will send you a link to login immediately.</string>
+
+
+    <!--    SignUp-->
+    <string name="add_new_account">Add New Account</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="password">Please enter password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="alpha_numeric_eight_character">Enter atleast 8 characters with alphanumeric, special character and capital letters</string>
+
+
+    <!--    OTP-->
+    <string name="verify_your_no">Verify your number</string>
+    <string name="otpstatement">One Time Password(OTP) has been sent to your mobile, please enter the same value here to login</string>
+    <string name="phoneno">Mobile no.</string>
+    <string name="resend">Resend</string>
+
+
+    <!--    Validations-->
+    <string name="enter_your_username">Please enter username</string>
+    <string name="enter_your_email">Please enter your email</string>
+    <string name="enter_your_correct_email">Incorrect Email</string>
+    <string name="enter_your_mobileno">Please enter your mobile number</string>
+    <string name="enter_atleast_your_mobileno">Please enter atleast nine digit mobile number</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="atleast_eight">Aleast 8 characters are required</string>
+    <string name="enter_well_pattern">Enter 8 characters with atleast one number, one character and one special character</string>
+    <string name="make_sure_you_enter_same_password">Please make sure you have entered the same password</string>
+
+    <string name="enter_wallet_address">Please enter wallet address</string>
+    <string name="enter_wallet_Private_key">Please enter private Key</string>
+    <string name="enter_new_wallet_name">Please enter new wallet name</string>
+
+    <string name="enter_from_address">Enter from address</string>
+    <string name="enter_to_address">Enter to address</string>
+    <string name="enter_elt_amount">Enter ELT Amount</string>
+
+
+    <!--    OTP-->
+    <string name="send_again">You can send OTP again!</string>
+    <string name="expire">OTP will expire in:</string>
+
+
+    <!--    Bottom Navigation-->
+    <string name="home">Home</string>
+    <string name="wallets">Wallets</string>
+    <string name="news">News</string>
+    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
+
+
+    <!--    Dashboard-->
+    <string name="daily_limit">Your Daily Send Limit</string>
+    <string name="weekly_limit">Your Weekly Send Limit</string>
+    <string name="monthly_limit">Your Monthly Send Limit</string>
+    <string name="elt">ELT</string>
+    <string name="elt_performance">ELT Performance</string>
+    <string name="one_month">1 month</string>
+    <string name="three_months">3 months</string>
+    <string name="six_months">6 months</string>
+    <string name="noChartDataString">Chart loading :)</string>
+
+
+    <!--    Wallet-->
+    <string name="create_wallet">Create Wallet</string>
+    <string name="import_wallet">Import Wallet</string>
+    <string name="name_new_wallet">Name your new wallet</string>
+    <string name="enter_wallet_name">Enter wallet name</string>
+    <string name="create">Create</string>
+    <string name="successful">Successful</string>
+    <string name="new_wallet">Your new wallet has been created!</string>
+    <string name="wallet_address">Wallet Address</string>
+    <string name="private_key">Private Key</string>
+    <string name="backed_up">Are you sure you have backed up your Private Key?</string>
+    <string name="not_yet">Not Yet</string>
+    <string name="yes_sure">Yes, I\'m sure</string>
+    <string name="no_wallets">There are no wallets. Press "+" to create a wallet.</string>
+
+
+    <!--    Import Wallet-->
+    <string name="with_private_key">With Private Key</string>
+    <string name="from_phone">From Phone</string>
+    <string name="new_wallet_name">New Wallet Name</string>
+    <string name="paste_wallet_address">Paste your Wallet Address here</string>
+    <string name="paste_private_key">Paste your Wallet Private Key here</string>
+    <string name="paste_new_wallet_name">Paste your new Import Wallet</string>
+    <string name="import_">Import</string>
+
+
+    <!--    Wallet Details-->
+    <string name="daily_limits">Daily Limit : </string>
+    <string name="weekly_limits">Weekly Limit : </string>
+    <string name="monthly_limits">Monthly Limit : </string>
+    <string name="rename_wallet">Rename Wallet</string>
+    <string name="delete_wallet">Delete Wallet</string>
+    <string name="delete_wallet_warning">Are you sure you want to delete wallet?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="receive">Receive</string>
+    <string name="send">Send</string>
+    <string name="save">Save</string>
+    <string name="name_wallet">Name your wallet</string>
+    <string name="rename_successfully">Wallet name changed successfully</string>
+    <string name="wallet_transactions">Wallet Transactions</string>
+    <string name="all">All</string>
+    <string name="sent">Sent</string>
+    <string name="received">Received</string>
+    <string name="no_transactions">There are no transactions</string>
+    <string name="there_is_no_elt">There is no ELT in this wallet kindly transfer some Elt into it</string>
+
+
+    <!--    Receive-->
+    <string name="only_send_elt">Only Send ELT to this Address!</string>
+    <string name="sending_any_other">Sending any other digital asset other than ELT will result in permanent loss.</string>
+    <string name="copy_address">Copy Address</string>
+    <string name="close">Close</string>
+
+
+    <!--    Send-->
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="paste_receiver">Paste receiver\'s wallet address here</string>
+    <string name="elt_amount">ELT Amount</string>
+    <string name="usd_amount">USD Amount</string>
+    <string name="eg_100">E.g. : 100.00</string>
+    <string name="max"><u>Max</u></string>
+    <string name="gas_price">Gas Price</string>
+    <string name="i_acknowledge">I acknowledge that a transaction fee of 0.000021 ELT will be applied during transfer.</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="please_accept">Please accept terms &amp; conditions</string>
+    <string name="clear">Clear</string>
+    <string name="passcode_sent">Passcode has been sent to your registered email address, Please check your email.</string>
+    <string name="successfully_sent">Successfully sent</string>
+
+
+    <!--    Transaction Details-->
+    <string name="transaction_details">Transaction Details</string>
+    <string name="tx_hash">TxHash</string>
+    <string name="tx_receipt_status">Txreceipt Status</string>
+    <string name="block_height">Block Height</string>
+    <string name="time_stamp">Time Stamp</string>
+    <string name="value">Value</string>
+    <string name="gas_limit">Gas Limit</string>
+    <string name="gas_used_by_ten">Gas Used By Ten</string>
+    <string name="nonce">Nonce</string>
+    <string name="input_data">Input Data</string>
+
+
+    <!--    Notifications-->
+    <string name="no_notifications">There are no notifictions</string>
+    <string name="you_have_received">You have received </string>
+    <string name="you_have_sent">You have sent </string>
+    <string name="you_have_created">You have created a new wallet </string>
+    <string name="your_transaction_of">Your transaction of </string>
+    <string name="is_failed_to">is failed to</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure_clear_notification">Are you sure you want to clear this notification?</string>
+    <string name="transaction_failed">Transaction Failed</string>
+
+
+    <!--    KYC Verification-->
+    <string name="start_verification">Start Verification</string>
+    <string name="government_regulations">Government regulations require us to know more about you.</string>
+    <string name="full_legal_name">Full Legal Name</string>
+    <string name="proof_of_id">Proof of ID</string>
+    <string name="proof_of_residence">Proof of Residence</string>
+    <string name="enter_your_full_legal">Enter your full legal name as shown on your ID.</string>
+    <string name="next">Next</string>
+
+    <string name="select_type_of_document">Select the type of document you wish to scan.</string>
+    <string name="malaysia_has_been_selected"><b>Malaysia</b> has been selected as issuing country of your documents. <u><b>Change country.</b></u></string>
+    <string name="passport">Passport</string>
+    <string name="driving_license">Driving License</string>
+    <string name="identity_card">Identity Card</string>
+
+
+    <string name="upoading_your_documents">Uploading your documents</string>
+    <string name="this_should_only_take">This should only take a couple of seconds, depending on your network connectivity.</string>
+
+    <string name="documents_successfully">Documents successfully submitted!</string>
+    <string name="thank_you_kyc">Thank you! We will notify you once your verification is complete in 2-3 business day.</string>
+    <string name="finished">Finished</string>
+
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="response_null">Response Null</string>
+    <string name="logout">Logout</string>
+    <string name="or">OR</string>
+    <string name="important">Important:</string>
+    <string name="important_note">Please backup and keep your Private key safely, it cannot be recovered if you lose it.\nDo not share it to anyone else, your funds will be stolen if you exposed it to the public.</string>
+
+
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_fromlib">Choose from Library</string>
+    <string name="add_photo">Add Photo!</string>
+    <string name="update">Update</string>
+    <string name="profile_updated_successfully">Profile updated successfully</string>
+
+
+    <string name="enter_oldPwd">Enter your old password</string>
+    <string name="enter_newPwd">Enter your new  password</string>
+    <string name="enter_cPwd">Enter your confirm  password</string>
+    <string name="atleastEight">Atleast 8 characters are required</string>
+    <string name="create_secure_pin">Create Secure Pin</string>
+    <string name="change_secure_pin">Change Secure Pin</string>
+    <string name="set_your_secure_pin">Set your secure pin</string>
+    <string name="secure_pin_length">Secure Pin should be 4 digits in length</string>
+    <string name="enter_secure_pin">Enter Secure Pin</string>
+    <string name="confirm_secure_pin">Enter Confirm Secure Pin</string>
+    <string name="enter_current_secure_pin">Enter Current Secure Pin</string>
+    <string name="enter_new_secure_pin">Enter New Secure Pin</string>
+    <string name="confirm_new_secure_pin">Enter Confirm New Secure Pin</string>
+    <string name="make_sure_you_enter_same_pin">Please make sure you have entered the same pin</string>
+    <string name="secure_pin_msg">You have already used this secure pin earlier, please try another one</string>
+    <string name="account_security">Account Security</string>
+    <string name="login_with_secure_pin">Login with Secure Pin</string>
+    <string name="login_with_face_id_touch_id">Login with Face ID / Touch ID</string>
+    <string name="change_password">Change Password</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="identity_verification">Identity Verification</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="language">Language</string>
+    <string name="currency">Currency</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="verify_your_secure_pin">Verify Your Secure Pin</string>
+    <string name="please_enter_correct_secure_pin">Please enter correct secure pin</string>
+    <string name="update_yourmobile">Please update your mobile to have accesss for the fingerprint</string>
+    <string name="no_hardware">There is no finger print hardware</string>
+    <string name="please_enable_touchid">It looks like you have disabled Touch ID from your Phone please enable that from Settings</string>
+    <string name="cannot_recognise_yorfinger">Cannot recognize your finger print. Please try again.</string>
+    <string name="touch_id_as_authentication">We use Touch ID as authentication to access.!</string>
+
+
+    <!--dxdfdf-->
+    <string name="enter_first_name">Enter first name</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_last_name">Enter last name</string>
+    <string name="full_name_as_per_national_id">Full Name as per National ID</string>
+    <string name="address1">Address1</string>
+    <string name="enter_address">Enter address</string>
+    <string name="address2">Address2</string>
+    <string name="gender">Gender</string>
+    <string name="birthday">Birthday</string>
+    <string name="city">City</string>
+    <string name="enter_city">Enter City</string>
+    <string name="state">State</string>
+    <string name="enter_state">Enter State</string>
+    <string name="country">Country</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="enter_post_code">Enter post code</string>
+    <string name="dob">Date of birth</string>
+    <string name="full_name">Full name</string>
+
+
+    <string name="verify_your_identity">Verify Your Identity</string>
+    <string name="verify_your_details_to_increase_your_daily_send_limit">Verify your details to increase your daily send limit.</string>
+    <string name="email_address">Email Address</string>
+    <string name="verify">Verify</string>
+    <string name="verified">Verified</string>
+    <string name="change">Change</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="kyc_verification">KYC Verification</string>
+    <string name="update_your_email">Update your email</string>
+    <string name="enter_your_new_email">Enter your new email</string>
+    <string name="resend_email">Resend Email</string>
+    <string name="update_your_contact_number">Update your contact number</string>
+
+
+    <string name="please_enter_your_legal_name">Please enter your legal name</string>
+    <string name="malaysia">Malaysia</string>
+    <string name="has_been_selected">has been selected as issuing country of your documents.</string>
+    <string name="change_country"><u><b>Change country.</b></u></string>
+
+    <string name="submit">Submit</string>
+    <string name="upload_document">Upload Document</string>
+    <string name="please_upload_your_document">Please upload your document</string>
+    <string name="front_side">Front Side</string>
+    <string name="back_side">Back Side</string>
+    <string name="upload_your_file_front">upload your file front</string>
+    <string name="upload_your_file_back">Upload your file back</string>
+    <string name="please_upload_front_side_of_document">Please upload Front side of document</string>
+    <string name="uploading_your_documents">Uploading your documents</string>
+    <string name="this_should_take">This should only take a couple of seconds, depending on your network connectivity.</string>
+    <string name="scan_document">Upload Document</string>
+    <string name="scan">Upload</string>
+    <string name="front">Front</string>
+    <string name="back">Back</string>
+    <string name="check_readability">Check Readability</string>
+    <string name="retake">Retake</string>
+    <string name="readable">Readable</string>
+    <string name="make_sure_that_all_data_on_your_document_is_fully_visible_readable_glare_free_and_not_blurred">Make sure that all data on your document is fully visible, readable, glare free and not blurred</string>
+    <string name="skip">Skip</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="set">Set</string>
+    <string name="of">of</string>
+    <string name="upload_back_side_document">Upload Back Side Document</string>
+    <string name="do_you_want_to_upload_back_side_of_document">Do you want to upload back side of document?</string>
+    <string name="enter_old_password">Enter Old Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="re_enter_new_password">Re-enter New Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="crypto_news">Crypto News</string>
+    <string name="no_news_found">No news found</string>
+    <string name="cryptonews">CRYPTO NEWS</string>
+    <string name="your_email_updated_successfully">Your email updated successfully</string>
+    <string name="please_verify_your_phone_number_and_email_address">Please verify your phone number and email address</string>
+    <string name="kyc_document_already_uploaded_msg">You already uploaded your KYC documents. We will notify you once your verification is completed</string>
+    <string name="kyc_documents_accepted_msg">Your uploaded KYC documents has accepted</string>
+    <string name="kyc_documents_rejected_msg">Your uploaded KYC documents has rejected please upload again</string>
+    <string name="kyc_documents_verified_msg">Your uploaded KYC documents are verified</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="please_enter_first_name">Please enter first name</string>
+    <string name="password_changed_successfully">Password changed successfully</string>
+    <string name="change_pwd_desc">Enter a new password, Password should be atleast 8 characters in length and include atleast one numeric and one special character, such as:!@#$%^*-</string>
+    <string name="app_version_2_8_1">App Version 2.8.1</string>
+    <string name="enable_location">Enable Location</string>
+    <string name="location_setting_msg">Your Locations Settings is set to "'Off'".\nPlease Enable Location to use this app</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="remaining">Remaining</string>
+    <string name="success">Success</string>
+    <string name="please_click_back_again_to_exit">Please click BACK again to exit.</string>
+    <string name="do_you_really_want_to_change_lang">Are you sure you would like to switch the language?</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="english">English</string>
+    <string name="chinese">Chinese</string>
+    <string name="transactions_title">Transactions</string>
+    <string name="wallet_copied">Wallet Copied</string>
+    <string name="profile_update_successfully">Profile image updated successfully</string>
+    <string name="permission_necessary">Permission necessary</string>
+    <string name="do_you_want_tologout">Are you sure you want to logout?</string>
+    <string name="since_last_30_days">since last 30 days</string>
+
+
+</resources>

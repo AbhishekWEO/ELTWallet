@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_section"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/arrow_back" />
+
+        <TextView
+            style="@style/white_headings"
+            android:text="@string/import_wallet" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_section"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/header_section"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/tab_layout_background">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            app:tabBackground="@drawable/tab_layout_selector"
+            app:tabIndicatorHeight="0dp"
+            app:tabRippleColor="@color/transparent"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="@color/colorPrimary">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/with_private_key" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from_phone" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/private_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_section">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/import_wallet_headings"
+                android:text="@string/wallet_address" />
+
+            <EditText
+                android:id="@+id/walletname"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                style="@style/import_wallet_edittext"
+                android:hint="@string/paste_new_wallet_name" />
+
+            <TextView
+                style="@style/import_wallet_headings"
+                android:text="@string/private_key" />
+
+            <EditText
+                android:id="@+id/walletaddress"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                style="@style/import_wallet_edittext"
+                android:hint="@string/paste_private_key" />
+
+            <TextView
+                style="@style/import_wallet_headings"
+                android:text="@string/new_wallet_name" />
+
+            <EditText
+                android:id="@+id/walletpvtkey"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                style="@style/import_wallet_edittext"
+                android:hint="@string/paste_new_wallet_name" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_private_import"
+            style="@style/SkyBlueButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/import_" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone_section"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_section">
+
+        <TextView
+            style="@style/import_wallet_headings"
+            android:gravity="center"
+            android:text="@string/from_phone" />
+
+        <TextView
+            android:id="@+id/btn_phone_import"
+            style="@style/SkyBlueButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/import_" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

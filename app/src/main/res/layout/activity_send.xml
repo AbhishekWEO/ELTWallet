@@ -1,0 +1,325 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/header_section"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:paddingBottom="25dp">
+
+                <ImageView
+                    android:id="@+id/back"
+                    style="@style/arrow_back" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/walletName"
+                        style="@style/white_headings"
+                        android:layout_centerInParent="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Wallet 1" />
+
+                    <TextView
+                        android:id="@+id/walletAddress"
+                        style="@style/home_headings"
+                        android:layout_below="@+id/walletName"
+                        android:text="0x09dd384bacbaf97fffa0c5de3f7ed6abdb5d5" />
+
+                    <TextView
+                        android:id="@+id/eltBalance"
+                        style="@style/white_headings"
+                        android:layout_below="@+id/walletAddress"
+                        android:layout_marginTop="20dp"
+                        android:text="321.4563424 ELT"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dollarPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/eltBalance"
+                        android:layout_alignBottom="@+id/walletBal"
+                        android:layout_centerHorizontal="true"
+                        android:text="($359.25)"
+                        android:textColor="@color/purple"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dollarPrice"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/rounded_hollow_dark_purple" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:layout_centerInParent="true"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:paddingLeft="4dp"
+                            android:paddingTop="0.5dp"
+                            android:paddingRight="4dp"
+                            android:paddingBottom="1dp"
+                            android:progress="50"
+                            android:progressDrawable="@drawable/progressbar_rounded_corner"
+                            android:progressTint="@color/dark_purple"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/transactionLimit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/progress"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/used"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Used"
+                            android:textColor="@color/purple"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/usedTransactionLimit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/used"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/remaining"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/remaining"
+                            android:textColor="@color/purple"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/remainingTransactionLimit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/remaining"
+                            android:layout_alignParentRight="true"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/border"
+                        style="@style/border"
+                        android:layout_below="@+id/elt_performance"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        style="@style/send_headings"
+                        android:text="@string/from" />
+
+                    <EditText
+                        android:id="@+id/from"
+                        style="@style/send_edittext"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        style="@style/send_headings"
+                        android:text="@string/to" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/to"
+                            style="@style/send_edittext"
+                            android:hint="@string/paste_receiver"
+                            android:imeOptions="actionNext"
+                            android:paddingEnd="40dp"
+                            android:inputType="text"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/camera"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_camera_white"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/send_headings"
+                                android:text="@string/elt_amount" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/amount"
+                                    style="@style/send_edittext"
+                                    android:hint="@string/eg_100"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="numberDecimal"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/max"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/max"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="@color/skyblue"
+                                    android:layout_alignParentRight="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/send_headings"
+                                android:text="@string/usd_amount" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/usd_amount"
+                                    style="@style/send_edittext"
+                                    android:hint="@string/eg_100"
+                                    android:focusable="false"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:textColor="@color/white" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/max2"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="@string/max"-->
+<!--                                    android:layout_marginTop="20dp"-->
+<!--                                    android:layout_marginRight="10dp"-->
+<!--                                    android:textColor="@color/skyblue"-->
+<!--                                    android:layout_alignParentRight="true"/>-->
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/send_headings"
+                        android:text="@string/gas_price" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/white"
+                        android:buttonTint="@color/white"
+                        android:text="@string/i_acknowledge"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/btn_send"
+                        style="@style/SkyBlueButton"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/send" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

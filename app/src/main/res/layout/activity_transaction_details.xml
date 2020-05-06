@@ -1,0 +1,220 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/backgroundColor"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/header_section"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/back"
+                style="@style/arrow_back" />
+
+            <TextView
+                style="@style/white_headings"
+                android:text="@string/transaction_details" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/relative_layout_transactions_deatils">
+
+                <TextView
+                    android:text="@string/tx_hash"
+                    style="@style/text_view_primary_transactions_deatils"/>
+
+                <TextView
+                    android:id="@+id/blockHash"
+                    android:layout_marginLeft="150dp"
+                    android:text="kdvnjnkd879794832jbdvjkbvdjsk8278972472439jnvdbkvds8379823789437dvjbvdkbvdk38893749"
+                    style="@style/text_view_grey_transactions_deatils"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/border" />
+
+            <RelativeLayout
+                style="@style/relative_layout_transactions_deatils">
+
+                <TextView
+                    android:text="@string/tx_receipt_status"
+                    style="@style/text_view_primary_transactions_deatils"/>
+
+                <TextView
+                    android:text="@string/success"
+                    android:textColor="@color/green"
+                    style="@style/text_view_grey_transactions_deatils"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/border" />
+
+            <RelativeLayout
+                style="@style/relative_layout_transactions_deatils">
+
+                <TextView
+                    android:text="@string/block_height"
+                    style="@style/text_view_primary_transactions_deatils"/>
+
+                <TextView
+                    android:id="@+id/blockNumber"
+                    style="@style/text_view_grey_transactions_deatils"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/border" />
+
+            <RelativeLayout
+                style="@style/relative_layout_transactions_deatils">
+
+                <TextView
+                    android:text="@string/time_stamp"
+                    style="@style/text_view_primary_transactions_deatils"/>
+
+                <TextView
+                    android:id="@+id/timestamp"
+                    style="@style/text_view_grey_transactions_deatils"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/border" />
+
+            <RelativeLayout
+                style="@style/relative_layout_transactions_deatils">
+
+                <TextView
+                    android:text="@string/from"
+                    style="@style/text_view_primary_transactions_deatils"/>
+
+                <TextView
+                    android:id="@+id/from"
+                    android:layout_marginLeft="150dp"
+                    style="@style/text_view_grey_transactions_deatils"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/border" />
+
+            <RelativeLayout
+                style="@style/relative_layout_transactions_deatils">
+
+                <TextView
+                    android:text="@string/to"
+                    style="@style/text_view_primary_transactions_deatils"/>
+
+                <TextView
+                    android:id="@+id/to"
+                    android:layout_marginLeft="150dp"
+                    style="@style/text_view_grey_transactions_deatils"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/border" />
+
+            <RelativeLayout
+                style="@style/relative_layout_transactions_deatils">
+
+                <TextView
+                    android:text="@string/value"
+                    style="@style/text_view_primary_transactions_deatils"/>
+
+                <TextView
+                    android:id="@+id/value"
+                    style="@style/text_view_grey_transactions_deatils"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/border" />
+
+            <RelativeLayout
+                style="@style/relative_layout_transactions_deatils">
+
+                <TextView
+                    android:text="@string/gas_limit"
+                    style="@style/text_view_primary_transactions_deatils"/>
+
+                <TextView
+                    android:id="@+id/c"
+                    style="@style/text_view_grey_transactions_deatils"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/border" />
+
+            <RelativeLayout
+                style="@style/relative_layout_transactions_deatils">
+
+                <TextView
+                    android:text="@string/gas_used_by_ten"
+                    style="@style/text_view_primary_transactions_deatils"/>
+
+                <TextView
+                    android:id="@+id/gas"
+                    style="@style/text_view_grey_transactions_deatils"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/border" />
+
+            <RelativeLayout
+                style="@style/relative_layout_transactions_deatils">
+
+                <TextView
+                    android:text="@string/nonce"
+                    style="@style/text_view_primary_transactions_deatils"/>
+
+                <TextView
+                    android:id="@+id/nonce"
+                    style="@style/text_view_grey_transactions_deatils"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/border" />
+
+            <RelativeLayout
+                style="@style/relative_layout_transactions_deatils">
+
+                <TextView
+                    android:text="@string/input_data"
+                    style="@style/text_view_primary_transactions_deatils"/>
+
+                <TextView
+                    android:id="@+id/input"
+                    style="@style/text_view_grey_transactions_deatils"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/border" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

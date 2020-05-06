@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_solid_corners_blue_min_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="@string/only_send_elt"
+            android:textStyle="bold"
+            android:textColor="@color/softRed" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:text="@string/sending_any_other"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/qr_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/walletAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="0x87r3892dfv88vn9shs9u"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/copy_address"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            style="@style/SkyBlueButton"
+            android:text="@string/copy_address" />
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            style="@style/DarkPurpleButton"
+            android:text="@string/close" />
+
+    </LinearLayout>
+
+</RelativeLayout>

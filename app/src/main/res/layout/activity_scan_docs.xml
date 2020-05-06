@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main"
+    android:background="@color/scan_docsBg"
+    tools:context=".activities.ScanDocsActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            style="@style/arrow_back"
+            android:tint="@color/colorPrimary"/>
+
+        <TextView
+            style="@style/white_headings"
+            android:text="@string/scan_document"
+            android:textColor="@color/colorPrimary"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_camera_kyc"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_marginTop="5dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@color/scan_docs_darkGrey">
+
+            <TextView
+                style="@style/tv_uploadKycDocs"
+                android:layout_marginTop="10dp"
+                android:text="@string/front_side"
+                android:id="@+id/tv_docsSides"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:id="@+id/ll_camera"
+                android:padding="40dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_blue_rect">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_camera"/>
+                <TextView
+                    style="@style/tv_uploadKycDocs"
+                    android:text="@string/camera"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:id="@+id/ll_gallery"
+                android:padding="40dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_blue_rect">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_photo_library"/>
+                <TextView
+                    style="@style/tv_uploadKycDocs"
+                    android:text="@string/gallery"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+            <TextView
+                style="@style/tv_uploadKycDocs"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Upload Driving License Front"
+                android:id="@+id/tv_docsName"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/tv_uploadKycDocs"
+                android:layout_gravity="center_horizontal"
+                android:text="Set 1 of 2"
+                android:id="@+id/tv_setsNum"
+                android:textColor="@color/grey"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

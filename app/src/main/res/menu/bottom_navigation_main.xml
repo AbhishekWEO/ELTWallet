@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/selector_home"
+        android:title="@string/home"
+        app:showAsAction="always|withText" />
+
+
+    <item
+        android:id="@+id/action_wallet"
+        android:enabled="true"
+        android:icon="@drawable/selector_wallet"
+        android:title="@string/wallets"
+        app:showAsAction="always|withText" />
+
+
+    <item
+        android:id="@+id/action_news"
+        android:enabled="true"
+        android:icon="@drawable/selector_news"
+        android:title="@string/news"
+        app:showAsAction="always|withText" />
+
+
+    <item
+        android:id="@+id/action_notifications"
+        android:enabled="true"
+        android:icon="@drawable/selector_notifications"
+        android:title="@string/notifications"
+        app:showAsAction="always|withText" />
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:enabled="true"
+        android:icon="@drawable/selector_settings"
+        android:title="@string/settings"
+        app:showAsAction="always|withText" />
+
+</menu>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id = "@+id/swipeRefresh"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below="@+id/heading_section">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/layout_notifications" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/heading_section"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroundColor">
+
+        <TextView
+            android:id="@+id/heading"
+            style="@style/fragment_headings"
+            android:text="@string/notifications" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/no_notifications"
+        android:visibility="gone"/>
+
+</RelativeLayout>

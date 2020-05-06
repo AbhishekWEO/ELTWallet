@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:id="@+id/header_section"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_back"
+            style="@style/arrow_back" />
+
+        <TextView
+            style="@style/white_headings"
+            android:text="@string/personal_information" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateTint="@color/colorPrimaryDark"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_section"
+        android:layout_above="@+id/btn_update"
+        android:id="@+id/scrollView"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_profile"
+                android:padding="10dp">
+
+                <TextView
+                    android:text="@string/profile_picture"
+                    android:layout_centerVertical="true"
+                    style="@style/text_view_primary_settings"/>
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toLeftOf="@+id/img_right">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/grey_circle"
+                        android:id="@+id/img_profilePic"/>
+
+                    <ProgressBar
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/progressBarPic"
+                        style="?android:attr/progressBarStyle"
+                        android:indeterminateTint="@color/colorPrimaryDark"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+            <RelativeLayout
+                android:id="@+id/rl_fname"
+                style="@style/relative_layout_settings">
+
+                <TextView
+                    android:id="@+id/tv_fname"
+                    android:text="@string/first_name"
+                    style="@style/text_view_primary_settings"/>
+
+                <EditText
+                    android:id="@+id/edt_fname"
+                    android:hint="@string/enter_first_name"
+                    android:layout_toEndOf="@+id/tv_fname"
+                    android:inputType="textCapWords"
+                    android:maxLength="30"
+                    android:imeOptions="actionNext"
+                    style="@style/edittext_profile" />
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+            <RelativeLayout
+                android:id="@+id/rl_lname"
+                style="@style/relative_layout_settings">
+
+                <TextView
+                    android:id="@+id/tv_lname"
+                    android:text="@string/last_name"
+                    style="@style/text_view_primary_settings"/>
+
+                <EditText
+                    android:id="@+id/edt_lname"
+                    android:hint="@string/enter_last_name"
+                    android:layout_toRightOf="@+id/tv_lname"
+                    android:maxLength="30"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"
+                    style="@style/edittext_profile"/>
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+            <RelativeLayout
+                android:id="@+id/rl_legalName"
+                style="@style/relative_layout_settings">
+
+                <TextView
+                    android:id="@+id/tv_legalName"
+                    android:text="@string/full_name_as_per_national_id"
+                    style="@style/text_view_primary_settings"/>
+
+                <TextView
+                    style="@style/edittext_profile"
+                    android:id="@+id/edt_legalName"
+                    android:hint="@string/full_name"
+                    android:layout_toRightOf="@+id/tv_legalName"
+                    android:paddingLeft="10dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+            <RelativeLayout
+                android:id="@+id/rl_address1"
+                style="@style/relative_layout_settings">
+
+                <TextView
+                    android:id="@+id/tv_address1"
+                    android:text="@string/address1"
+                    style="@style/text_view_primary_settings"/>
+
+                <EditText
+                    android:id="@+id/edt_address1"
+                    android:hint="@string/enter_address"
+                    android:layout_toRightOf="@+id/tv_address1"
+                    android:maxLength="30"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"
+                    style="@style/edittext_profile"/>
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+            <RelativeLayout
+                android:id="@+id/rl_address2"
+                style="@style/relative_layout_settings">
+
+                <TextView
+                    android:id="@+id/tv_address2"
+                    android:text="@string/address2"
+                    style="@style/text_view_primary_settings"/>
+
+                <EditText
+                    android:id="@+id/edt_address2"
+                    android:hint="@string/enter_address"
+                    android:layout_toRightOf="@+id/tv_address2"
+                    android:maxLength="30"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"
+                    style="@style/edittext_profile"/>
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_gender"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gender_spinner"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:id="@+id/tv_gender"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+            <RelativeLayout
+                android:id="@+id/rl_city"
+                style="@style/relative_layout_settings">
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:text="@string/city"
+                    style="@style/text_view_primary_settings"/>
+
+                <EditText
+                    android:id="@+id/edt_city"
+                    android:hint="@string/enter_city"
+                    android:layout_toRightOf="@+id/tv_city"
+                    android:maxLength="30"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    style="@style/edittext_profile"/>
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+            <RelativeLayout
+                android:id="@+id/rl_state"
+                style="@style/relative_layout_settings">
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:text="@string/state"
+                    style="@style/text_view_primary_settings"/>
+
+                <EditText
+                    android:id="@+id/edt_state"
+                    android:hint="@string/enter_state"
+                    android:layout_toRightOf="@+id/tv_state"
+                    android:maxLength="30"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"
+                    style="@style/edittext_profile"/>
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+            <RelativeLayout
+                android:id="@+id/rl_postalCode"
+                style="@style/relative_layout_settings">
+
+                <TextView
+                    android:id="@+id/tv_postalCode"
+                    android:text="@string/postal_code"
+                    style="@style/text_view_primary_settings"/>
+
+                <EditText
+                    android:hint="@string/enter_post_code"
+                    android:id="@+id/edt_postalCode"
+                    android:layout_toRightOf="@+id/tv_postalCode"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    style="@style/edittext_profile"/>
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+            <RelativeLayout
+                android:id="@+id/rl_country"
+                style="@style/relative_layout_settings">
+
+                <TextView
+                    android:id="@+id/tv_country"
+                    android:text="@string/country"
+                    style="@style/text_view_primary_settings"/>
+
+                <EditText
+                    android:focusable="false"
+                    android:hint="@string/country"
+                    android:id="@+id/edt_country"
+                    android:layout_toRightOf="@+id/tv_country"
+                    android:maxLength="30"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"
+                    style="@style/edittext_profile"
+                    />
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+            <RelativeLayout
+                android:id="@+id/rl_birthday"
+                style="@style/relative_layout_settings">
+
+                <TextView
+                    android:id="@+id/tv_dobT"
+                    android:text="@string/dob"
+                    style="@style/text_view_primary_settings"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_dobT"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_bob"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/dob"
+                        android:id="@+id/tv_dob"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="16dp"
+                        android:layout_toLeftOf="@+id/img_right4"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/border" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btn_update"
+        style="@style/SkyBlueButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/update" />
+
+    <ProgressBar
+        android:id="@+id/progressBarUpdate"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        style="?android:attr/progressBarStyle"
+        android:visibility="gone"
+        android:indeterminateTint="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"/>
+
+</RelativeLayout>

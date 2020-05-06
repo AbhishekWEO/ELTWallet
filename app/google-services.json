@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "370674716033",
+    "firebase_url": "https://xrypto-wallet.firebaseio.com",
+    "project_id": "xrypto-wallet",
+    "storage_bucket": "xrypto-wallet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370674716033:android:e9ac542ac08cea924bac80",
+        "android_client_info": {
+          "package_name": "com.crypto.eltwallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370674716033-7j39i20eov9n2ksh57gkaf38rm1lqj2s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crypto.eltwallet",
+            "certificate_hash": "ca803caf1e201619afdfe10f8ec18766c185e944"
+          }
+        },
+        {
+          "client_id": "370674716033-21agqv6njjgcmjid56c7tmvuq1ak04f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0p_puB98Ey_3eLQIcZbFURSszx-1Q1cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370674716033-21agqv6njjgcmjid56c7tmvuq1ak04f0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "370674716033-b7hk9bq3iu5pdvpg16pbhn0rs91i0b2k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.develop.walletApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370674716033:android:bc3ef2d8bf53a08b4bac80",
+        "android_client_info": {
+          "package_name": "com.example.eltwallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370674716033-31pb28s7tlekdjp4prdl2o80hc21eqb6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eltwallet",
+            "certificate_hash": "ca803caf1e201619afdfe10f8ec18766c185e944"
+          }
+        },
+        {
+          "client_id": "370674716033-21agqv6njjgcmjid56c7tmvuq1ak04f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0p_puB98Ey_3eLQIcZbFURSszx-1Q1cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370674716033-21agqv6njjgcmjid56c7tmvuq1ak04f0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "370674716033-b7hk9bq3iu5pdvpg16pbhn0rs91i0b2k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.develop.walletApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370674716033:android:a05de88cd54d2977",
+        "android_client_info": {
+          "package_name": "com.xryptowallet.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370674716033-21agqv6njjgcmjid56c7tmvuq1ak04f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0p_puB98Ey_3eLQIcZbFURSszx-1Q1cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370674716033-21agqv6njjgcmjid56c7tmvuq1ak04f0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "370674716033-b7hk9bq3iu5pdvpg16pbhn0rs91i0b2k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.develop.walletApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
